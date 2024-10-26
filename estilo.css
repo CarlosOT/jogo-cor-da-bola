@@ -1,0 +1,55 @@
+body{
+    background-color: #000000;
+    color: black;
+    font: 15pt normal;
+    text-align: center;
+    padding: 50px;
+    margin-top: -20px;
+
+}header{
+    text-align: center;
+
+}section{
+    background-color: #00ffdd;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 100px;
+    margin: auto;
+
+}footer{
+    text-align: center;
+    margin-top: 30px;
+
+}button{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 10px 10px 10px;
+}a{
+    text-decoration: none;
+    color: #ebebebad;
+}p{
+    color: #ebebebad;
+}h1{
+    color: #ebebebad;
+}
+
+/*ID*/
+
+#temporizador{
+    color:red;
+    font-weight: bold;
+    font-size: 25px;
+}#pontos{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ebebebad;
+}#textoBola{
+    color: black;
+    font-weight: bold;
+}#perdeGanha{
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}

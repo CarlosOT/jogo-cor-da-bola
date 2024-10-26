@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Move Bloco</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo Cor Da Bola</h1>
+    </header>
+    <div>
+        <p>99% da população não consegue chegar a <br><strong>x pontos</strong> antes dos 30 segundos!</p>
+    </div>
+   
+    <div>
+        <p id="temporizador"></p>
+    </div>
+ 
+    <section id="bloco">
+        <p id="textoBola"></p>
+    </section>
+
+    <div>
+        <p id="pontos"></p>
+        <p id="perdeGanha">VAMOS COMEÇAR</p>
+    </div>
+
+    <div>
+        <button type="button" onclick="certo()">CERTO</button>
+        <button type="button" onclick="errado()">ERRADO</button>
+    </div>
+    <footer>
+        <a href="https://github.com/CarlosOT">&copy;byCarlosOT <i class="fa-brands fa-github"></i></a>
+    </footer>
+</body>
+</html>
