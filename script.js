@@ -1,7 +1,7 @@
 //TEMPORIZADOR
 var temporizador = document.getElementById('temporizador');
 temporizador.style.display = "none";
-var segundos = 2;
+var segundos = 30;
 
 var ativarIntervalo = function() { //função 01
   temporizador.innerHTML = `${segundos} segundos`;
