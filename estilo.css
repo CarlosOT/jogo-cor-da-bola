@@ -1,12 +1,4 @@
-body{
-    background-color: #000000;
-    color: black;
-    font: 15pt normal;
-    text-align: center;
-    padding: 50px;
-    margin-top: -20px;
-
-}header{
+header{
     text-align: center;
 
 }section{
@@ -28,12 +20,12 @@ body{
     margin: 5px 10px 10px 10px;
 }a{
     text-decoration: none;
-    color: #ebebebad;
+    color: white;
     font-size: 17px;
 }p{
-    color: #ebebebad;
+    color: white;
 }h1{
-    color: #ebebebad;
+    color: white;
 }
 
 /*ID*/
@@ -45,7 +37,7 @@ body{
 }#pontos{
     font-weight: bold;
     font-size: 25px;
-    color: #ebebebad;
+    color: white;
 }#textoBola{
     color: black;
     font-weight: bold;
@@ -53,4 +45,13 @@ body{
     font-size: 20px;
     margin-top: -15px;
     margin-bottom: 15px;
+
+}#background{
+    background-color: #000000;
+    color: black;
+    font: 15pt normal;
+    text-align: center;
+    padding: 50px;
+    margin-top: -20px;
+
 }
