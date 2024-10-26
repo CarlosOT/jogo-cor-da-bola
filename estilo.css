@@ -23,24 +23,34 @@ header{
     color: white;
     font-size: 17px;
 }p{
-    color: white;
+    color: #ffffff;
 }h1{
     color: white;
+}button{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
 }
 
 /*ID*/
 
 #temporizador{
-    color:red;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
+    width: 170px;
+    margin: auto;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }#pontos{
     font-weight: bold;
     font-size: 25px;
     color: white;
-}#textoBola{
-    color: black;
-    font-weight: bold;
 }#perdeGanha{
     font-size: 20px;
     margin-top: -15px;
@@ -52,6 +62,5 @@ header{
     font: 15pt normal;
     text-align: center;
     padding: 50px;
-    margin-top: -20px;
-
+    margin-top: 20px;
 }
