@@ -1,18 +1,9 @@
 header{
     text-align: center;
 
-}section{
-    background-color: #00ffdd;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    border-radius: 100px;
-    margin: auto;
-
 }footer{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 
 }button{
     padding: 10px;
@@ -32,7 +23,7 @@ header{
     color: white;
     padding: 15px;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 18px;
 }h2{
     margin-top: -20px;
     font-size: 20px;
@@ -43,8 +34,8 @@ header{
 
 #temporizador{
     font-weight: bold;
-    font-size: 30px;
-    width: 170px;
+    font-size: 25px;
+    width: 200px;
     margin: auto;
     border: 1px solid;
     border-color: white;
@@ -70,21 +61,30 @@ header{
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    padding: 3px 8px 3px 8px;
 
 }#background{
     background-color: #000000;
     color: black;
     font: 15pt normal;
     text-align: center;
-    padding: 50px;
-    margin-top: 20px;
+
 }#headline{
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid;
     border-color: white;
     background-color: #000000;
     padding: 10px 20px 10px 20px;
     
+}#bloco{
+    background-color: #00ffdd;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 100px;
+    margin: auto;
+
 }

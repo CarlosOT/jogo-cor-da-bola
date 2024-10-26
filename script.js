@@ -55,9 +55,9 @@ idPonto.innerHTML = `${pontos} pontos`;
 
 function certo(){ 
     if(temporizadorLigado == false && temporizadorDesligado == false){
-        bloco.style.width = "300px";
-        bloco.style.height = "300px";
-        bloco.style.lineHeight = "300px";
+        bloco.style.width = "250px";
+        bloco.style.height = "250px";
+        bloco.style.lineHeight = "250px";
         bloco.style.borderRadius = "200px";
 
         idPerdeGanha.style.border = "1px solid";
@@ -111,9 +111,9 @@ function certo(){
 
 function errado(){
     if(temporizadorLigado == false && temporizadorDesligado == false){
-        bloco.style.width = "300px";
-        bloco.style.height = "300px";
-        bloco.style.lineHeight = "300px";
+        bloco.style.width = "250px";
+        bloco.style.height = "250px";
+        bloco.style.lineHeight = "250px";
         bloco.style.borderRadius = "200px";
 
         idPerdeGanha.style.border = "1px solid";
