@@ -25,12 +25,17 @@ header{
 }p{
     color: #ffffff;
 }h1{
+    font-size: 40px;
     color: white;
 }button{
     background-color: black;
     color: white;
     padding: 15px;
     border-radius: 50px;
+}h2{
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
 }
 
 /*ID*/
@@ -51,10 +56,19 @@ header{
     font-weight: bold;
     font-size: 25px;
     color: white;
+    border: 1px solid;
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 100px;
+    background-color: #000000;
+
 }#perdeGanha{
     font-size: 20px;
-    margin-top: -15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
 }#background{
     background-color: #000000;
@@ -63,4 +77,13 @@ header{
     text-align: center;
     padding: 50px;
     margin-top: 20px;
+}#headline{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: white;
+    background-color: #000000;
+    padding: 10px 50px 10px 50px;
+    
 }

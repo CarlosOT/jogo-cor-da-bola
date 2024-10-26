@@ -13,6 +13,9 @@ var ativarIntervalo = function() { //função 01
 
     if (novoValor === 0) {
       clearInterval(intervalo);
+      temporizador.style.display = "none";
+      botao1.style.display = "none";
+      botao2.style.display = "none";
       //setTimeout(ativarIntervalo, 3000); COMANDO PARA RESETAR TIMER APÓS 3 SEGUNDOS (LOOP)
     }
 
@@ -26,6 +29,8 @@ let idPonto = document.getElementById('pontos');
 let idPerdeGanha = document.getElementById('perdeGanha');
 let backgroundBody = document.getElementById('background');
 let headline = document.getElementById('headline');
+let botao1 = document.getElementById('botao1');
+let botao2 = document.getElementById('botao2');
 
 let nomeCor = ["BOLA AMARELA", "BOLA VERMELHA", "BOLA AZUL", "BOLA VERDE", "BOLA ROSA", "BOLA LARANJA"];
 let hexaCor = ["#ffff00", "#ff0000", "#0800ff", "#00ff08", "#e100ff", "#ff8c00"];
@@ -41,6 +46,7 @@ let pontos = 0;
 let temporizadorLigado = false;
 let temporizadorDesligado = false;
 
+idPonto.style.display = "none";
 backgroundBody.style.backgroundColor = `${contrastes[random1]}`;
 bloco.style.backgroundColor = `${hexaCor[random1]}`;
 bloco.innerText = `${nomeCor[random2]}`;
@@ -49,21 +55,37 @@ idPonto.innerHTML = `${pontos} pontos`;
 
 function certo(){ 
     if(temporizadorLigado == false && temporizadorDesligado == false){
+        bloco.style.width = "300px";
+        bloco.style.height = "300px";
+        bloco.style.lineHeight = "300px";
+        bloco.style.borderRadius = "200px";
+
+        idPerdeGanha.style.border = "1px solid";
+        idPerdeGanha.style.width = "150px";
+        idPerdeGanha.style.margin = "auto";
+        idPerdeGanha.style.marginTop = "-25px";
+        idPerdeGanha.style.marginBottom = "20px";
+
         headline.style.display = "none";
+
         temporizador.style.backgroundColor = "#ff0000";
         temporizador.style.color = "#ffffff";
         temporizador.style.display = "";
+
+        idPonto.style.display = "";
         ativarIntervalo();
     }
     if(random1 == random2){
         pontos += 1;
         idPonto.innerHTML = `${pontos} pontos`;
-        idPerdeGanha.style.color = 'green';
+        idPerdeGanha.style.color = 'white';
+        idPerdeGanha.style.backgroundColor = "green";
         idPerdeGanha.innerHTML = 'acertou +1 ponto';
     }else{
         pontos -= 1;
         idPonto.innerHTML = `${pontos} pontos`;
-        idPerdeGanha.style.color = 'red';
+        idPerdeGanha.style.backgroundColor = "red";
+        idPerdeGanha.style.color = 'white';
         idPerdeGanha.innerHTML = 'errou -1 ponto';
     }
 
@@ -89,21 +111,37 @@ function certo(){
 
 function errado(){
     if(temporizadorLigado == false && temporizadorDesligado == false){
+        bloco.style.width = "300px";
+        bloco.style.height = "300px";
+        bloco.style.lineHeight = "300px";
+        bloco.style.borderRadius = "200px";
+
+        idPerdeGanha.style.border = "1px solid";
+        idPerdeGanha.style.width = "150px";
+        idPerdeGanha.style.margin = "auto";
+        idPerdeGanha.style.marginTop = "-25px";
+        idPerdeGanha.style.marginBottom = "20px";
+
         headline.style.display = "none";
+
         temporizador.style.backgroundColor = "#ff0000";
         temporizador.style.color = "#ffffff";
         temporizador.style.display = "";
+
+        idPonto.style.display = "";
         ativarIntervalo();
     }
     if(random1 != random2){
         pontos += 1;
         idPonto.innerHTML = `${pontos} pontos`;
-        idPerdeGanha.style.color = 'green';
+        idPerdeGanha.style.color = 'white';
+        idPerdeGanha.style.backgroundColor = "green";
         idPerdeGanha.innerHTML = 'acertou +1 ponto'
     }else{
         pontos -= 1;
         idPonto.innerHTML = `${pontos} pontos`;
-        idPerdeGanha.style.color = 'red';
+        idPerdeGanha.style.backgroundColor = "red";
+        idPerdeGanha.style.color = 'white';
         idPerdeGanha.innerHTML = 'errou -1 ponto';
     }
 
