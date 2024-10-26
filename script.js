@@ -26,21 +26,22 @@ let idPerdeGanha = document.getElementById('perdeGanha');
 
 let nomeCor = ["BOLA AMARELA", "BOLA VERMELHA", "BOLA AZUL", "BOLA VERDE", "BOLA ROSA", "BOLA LARANJA"];
 let hexaCor = ["#ffff00", "#ff0000", "#0800ff", "#00ff08", "#e100ff", "#ff8c00"];
-let nomeAleatorio = Math.floor(Math.random() * 6); 
-let hexaAleatorio = Math.floor(Math.random() * 6); 
+let random1 = Math.floor(Math.random() * 6); 
+let random2 = Math.floor(Math.random() * 6); 
+let random3 = 0;
 let pontos = 0;
 let temporizadorLigado = false;
 let temporizadorDesligado = false;
 
-bloco.style.backgroundColor = `${hexaCor[hexaAleatorio]}`;
-bloco.innerText = `${nomeCor[nomeAleatorio]}`;
+bloco.style.backgroundColor = `${hexaCor[random1]}`;
+bloco.innerText = `${nomeCor[random2]}`;
 idPonto.innerHTML = `${pontos} pontos`;
 
 function certo(){ 
     if(temporizadorLigado == false && temporizadorDesligado == false){
         ativarIntervalo();
     }
-    if(nomeAleatorio == hexaAleatorio){
+    if(random1 == random2){
         pontos += 1;
         idPonto.innerHTML = `${pontos} pontos`;
         idPerdeGanha.style.color = 'green';
@@ -52,10 +53,19 @@ function certo(){
         idPerdeGanha.innerHTML = 'errou -1 ponto';
     }
 
-    nomeAleatorio = Math.floor(Math.random() * 6);
-    hexaAleatorio = Math.floor(Math.random() * 6);
-    bloco.style.backgroundColor = `${hexaCor[hexaAleatorio]}`;
-    bloco.innerText = `${nomeCor[nomeAleatorio]}`;
+    random3 = Math.floor(Math.random() * 2); //retorno 0 ou 1
+    if(random3 == 0){
+        random1 = Math.floor(Math.random() * 6);
+        random2 = Math.floor(Math.random() * 6);
+        bloco.style.backgroundColor = `${hexaCor[random1]}`;
+        bloco.innerText = `${nomeCor[random2]}`;
+    }else if(random3 == 1){
+        random1 = Math.floor(Math.random() * 6);
+        bloco.style.backgroundColor = `${hexaCor[random1]}`;
+        bloco.innerText = `${nomeCor[random1]}`;
+        random2 = random1;
+    }
+
     temporizadorDesligado = true;
 }
 
@@ -63,7 +73,7 @@ function errado(){
     if(temporizadorLigado == false && temporizadorDesligado == false){
         ativarIntervalo();
     }
-    if(nomeAleatorio != hexaAleatorio){
+    if(random1 != random2){
         pontos += 1;
         idPonto.innerHTML = `${pontos} pontos`;
         idPerdeGanha.style.color = 'green';
@@ -75,9 +85,18 @@ function errado(){
         idPerdeGanha.innerHTML = 'errou -1 ponto';
     }
 
-    nomeAleatorio = Math.floor(Math.random() * 6);
-    hexaAleatorio = Math.floor(Math.random() * 6);
-    bloco.style.backgroundColor = `${hexaCor[hexaAleatorio]}`;
-    bloco.innerText = `${nomeCor[nomeAleatorio]}`;
+    random3 = Math.floor(Math.random() * 2); //retorno 0 ou 1
+    if(random3 == 0){
+        random1 = Math.floor(Math.random() * 6);
+        random2 = Math.floor(Math.random() * 6);
+        bloco.style.backgroundColor = `${hexaCor[random1]}`;
+        bloco.innerText = `${nomeCor[random2]}`;
+    }else if(random3 == 1){
+        random1 = Math.floor(Math.random() * 6);
+        bloco.style.backgroundColor = `${hexaCor[random1]}`;
+        bloco.innerText = `${nomeCor[random1]}`;
+        random2 = random1;
+    }
+
     temporizadorDesligado = true;
 }
