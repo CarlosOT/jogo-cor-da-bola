@@ -1,7 +1,7 @@
 //TEMPORIZADOR
 var temporizador = document.getElementById('temporizador');
 temporizador.style.display = "none";
-var segundos = 30;
+var segundos = 2;
 
 var ativarIntervalo = function() { //função 01
   temporizador.innerHTML = `${segundos} segundos`;
@@ -17,6 +17,8 @@ var ativarIntervalo = function() { //função 01
       botao1.style.display = "none";
       botao2.style.display = "none";
       idPerdeGanha.style.display = "none";
+      audioSusto.autoplay = true;
+      audioSusto.load();
       //setTimeout(ativarIntervalo, 3000); COMANDO PARA RESETAR TIMER APÓS 3 SEGUNDOS (LOOP)
     }
 
@@ -32,6 +34,7 @@ let backgroundBody = document.getElementById('background');
 let headline = document.getElementById('headline');
 let botao1 = document.getElementById('botao1');
 let botao2 = document.getElementById('botao2');
+let audioSusto = document.getElementById('audioSusto');
 
 let nomeCor = ["BOLA AMARELA", "BOLA VERMELHA", "BOLA AZUL", "BOLA VERDE", "BOLA ROXA", "BOLA LARANJA"];
 let hexaCor = ["#ffff00", "#ff0000", "#0800ff", "#00ff08", "#e100ff", "#ff8c00"];
