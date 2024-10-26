@@ -67,6 +67,7 @@ function certo(){
         idPerdeGanha.style.margin = "auto";
         idPerdeGanha.style.marginTop = "-25px";
         idPerdeGanha.style.marginBottom = "20px";
+        idPerdeGanha.style.fontSize = "20px";
 
         headline.style.display = "none";
 
@@ -125,6 +126,7 @@ function errado(){
         idPerdeGanha.style.margin = "auto";
         idPerdeGanha.style.marginTop = "-25px";
         idPerdeGanha.style.marginBottom = "20px";
+        idPerdeGanha.style.fontSize = "20px";
 
         headline.style.display = "none";
 
