@@ -12,14 +12,23 @@ var ativarIntervalo = function() { //função 01
     temporizador.innerHTML = `${novoValor} segundos`;
 
     if (novoValor === 0) {
-      clearInterval(intervalo);
-      temporizador.style.display = "none";
-      botao1.style.display = "none";
-      botao2.style.display = "none";
-      idPerdeGanha.style.display = "none";
-      audioSusto.autoplay = true;
-      audioSusto.load();
-      //setTimeout(ativarIntervalo, 3000); COMANDO PARA RESETAR TIMER APÓS 3 SEGUNDOS (LOOP)
+        clearInterval(intervalo);
+        temporizador.style.display = "none";
+        botao1.style.display = "none";
+        botao2.style.display = "none";
+        idPerdeGanha.style.display = "none";
+        titulo.style.display = "none";
+        bloco.style.display = "none";
+        idPonto.style.display = "none";
+        idFooter.style.display = "none";
+        backgroundBody.style.backgroundImage = "url(monstro.jpg)";
+        backgroundBody.style.backgroundRepeat = "no-repeat";
+        backgroundBody.style.backgroundPosition = "center";
+        backgroundBody.style.backgroundSize = "cover";
+        backgroundBody.style.backgroundAttachment = "fixed";
+        audioSusto.autoplay = true;
+        audioSusto.load();
+        //setTimeout(ativarIntervalo, 3000); COMANDO PARA RESETAR TIMER APÓS 3 SEGUNDOS (LOOP)
     }
 
   }, 1000);
@@ -35,6 +44,8 @@ let headline = document.getElementById('headline');
 let botao1 = document.getElementById('botao1');
 let botao2 = document.getElementById('botao2');
 let audioSusto = document.getElementById('audioSusto');
+let titulo = window.document.getElementById('titulo');
+let idFooter = document.getElementById('idFooter');
 
 let nomeCor = ["BOLA AMARELA", "BOLA VERMELHA", "BOLA AZUL", "BOLA VERDE", "BOLA ROXA", "BOLA LARANJA"];
 let hexaCor = ["#ffff00", "#ff0000", "#0800ff", "#00ff08", "#e100ff", "#ff8c00"];

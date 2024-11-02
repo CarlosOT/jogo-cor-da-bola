@@ -1,10 +1,6 @@
 header{
     text-align: center;
 
-}footer{
-    text-align: center;
-    margin-top: 20px;
-
 }button{
     padding: 10px;
     border-radius: 5px;
@@ -64,8 +60,6 @@ header{
     padding: 3px 8px 3px 8px;
 
 }#background{
-    background-color: #000000;
-    color: black;
     font: 15pt normal;
     text-align: center;
 
@@ -89,4 +83,7 @@ header{
     margin: auto;
     font-weight: bold;
 
+}#idFooter{
+    text-align: center;
+    margin-top: 20px;
 }
