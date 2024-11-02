@@ -14,12 +14,6 @@ header{
 }h1{
     font-size: 40px;
     color: white;
-}button{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 18px;
 }h2{
     margin-top: -20px;
     font-size: 20px;
@@ -86,4 +80,18 @@ header{
 }#idFooter{
     text-align: center;
     margin-top: 20px;
+}#botao1, #botao2{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+}#botao3{
+    background-color: rgb(25, 0, 255);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 280px;
+    margin: auto;
 }

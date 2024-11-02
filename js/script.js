@@ -26,13 +26,15 @@ var ativarIntervalo = function() { //função 01
         backgroundBody.style.backgroundSize = "cover";
         backgroundBody.style.backgroundAttachment = "fixed";
         audioSusto.autoplay = true;
-        audioSusto.load();
+        //audioSusto.load();
         //após o susto
         function telaFinal(){
             titulo.style.display = "block";
             bloco.style.display = "block";
             idPonto.style.display = "block";
             idFooter.style.display = "block";
+            botaoCompartilha.style.display = "block";
+            linkCompartilha.href = `https://api.whatsapp.com/send?&text=t%C3%A1%20todo%20mundo%20jogando,%20eu%20consegui%20fazer%20${pontos}%20pontos%20%F0%9F%98%86%0A%0Aquero%20ver%20voc%C3%AA%20agora%20%F0%9F%91%87%F0%9F%8F%BC%0A%0Ahttps://carlosot.github.io/jogo-cor-da-bola`;
             backgroundBody.style.backgroundImage = "";
         }
         let timeout;
@@ -55,6 +57,8 @@ let botao2 = document.getElementById('botao2');
 let audioSusto = document.getElementById('audioSusto');
 let titulo = window.document.getElementById('titulo');
 let idFooter = document.getElementById('idFooter');
+let botaoCompartilha = document.getElementById('botao3');
+let linkCompartilha = document.getElementById('linkCompartilha');
 
 let nomeCor = ["BOLA AMARELA", "BOLA VERMELHA", "BOLA AZUL", "BOLA VERDE", "BOLA ROXA", "BOLA LARANJA"];
 let hexaCor = ["#ffff00", "#ff0000", "#0800ff", "#00ff08", "#e100ff", "#ff8c00"];
@@ -71,6 +75,7 @@ let temporizadorLigado = false;
 let temporizadorDesligado = false;
 
 idPonto.style.display = "none";
+botaoCompartilha.style.display = "none";
 backgroundBody.style.backgroundColor = `${contrastes[random1]}`;
 //bloco.style.backgroundColor = `${hexaCor[random1]}`;
 bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#000000)`;
