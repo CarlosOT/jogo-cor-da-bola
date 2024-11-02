@@ -94,4 +94,13 @@ header{
     font-size: 15px;
     width: 280px;
     margin: auto;
+}#msgFinal1, #msgFinal2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    border: 1px solid;
+    border-color: white;
+    background-color: #000000;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
 }
