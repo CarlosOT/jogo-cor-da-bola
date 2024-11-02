@@ -1,18 +1,17 @@
 //TEMPORIZADOR
 var temporizador = document.getElementById('temporizador');
 temporizador.style.display = "none";
-var segundos = 30;
+var segundos = 60;
 
 var ativarIntervalo = function() { //função 01
-  temporizador.innerHTML = `${segundos} segundos`;
-
-  var intervalo = setInterval(function() { //função 02 (set interval com tempo de espera de 1 segundo)
-
+    temporizador.innerHTML = `${segundos} segundos`;
+    
+    var intervalo = setInterval(function() { //função 02 (set interval com tempo de espera de 1 segundo)
     var novoValor = parseInt(temporizador.innerHTML) - 1;
     temporizador.innerHTML = `${novoValor} segundos`;
 
     if (novoValor === 0) {
-        clearInterval(intervalo);
+        clearTimeout(intervalo);
         temporizador.style.display = "none";
         botao1.style.display = "none";
         botao2.style.display = "none";
@@ -28,11 +27,21 @@ var ativarIntervalo = function() { //função 01
         backgroundBody.style.backgroundAttachment = "fixed";
         audioSusto.autoplay = true;
         audioSusto.load();
-        //setTimeout(ativarIntervalo, 3000); COMANDO PARA RESETAR TIMER APÓS 3 SEGUNDOS (LOOP)
+        //após o susto
+        function telaFinal(){
+            titulo.style.display = "block";
+            bloco.style.display = "block";
+            idPonto.style.display = "block";
+            idFooter.style.display = "block";
+            backgroundBody.style.backgroundImage = "";
+        }
+        let timeout;
+        function fimJogo(){
+            timeout = setTimeout(telaFinal, 3000);
+        }
+        fimJogo();
     }
-
   }, 1000);
-
 };
 
 //DEFINIÇÕES INICIAIS PARA EXECUÇÃO DO PROGRAMA
