@@ -26,7 +26,7 @@ var ativarIntervalo = function() { //função 01
         backgroundBody.style.backgroundSize = "cover";
         backgroundBody.style.backgroundAttachment = "fixed";
         audioSusto.autoplay = true;
-        //audioSusto.load();
+        audioSusto.load();
         //após o susto
         function telaFinal(){
             titulo.style.display = "block";
