@@ -18,6 +18,8 @@ header{
     margin-top: -20px;
     font-size: 20px;
     color: white;
+}hr{
+    width: 50px;
 }
 
 /*ID*/
@@ -79,7 +81,7 @@ header{
 
 }#idFooter{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }#botao1, #botao2{
     background-color: black;
     color: white;
