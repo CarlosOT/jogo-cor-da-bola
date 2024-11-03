@@ -36,7 +36,7 @@ var ativarIntervalo = function() { //função 01
             botaoCompartilha.style.display = "block";
             linkCompartilha.href = `https://api.whatsapp.com/send?&text=t%C3%A1%20todo%20mundo%20jogando,%20eu%20consegui%20fazer%20${pontos}%20pontos%20%F0%9F%98%86%0A%0Aquero%20ver%20voc%C3%AA%20agora%20%F0%9F%91%87%F0%9F%8F%BC%0A%0Ahttps://carlosot.github.io/jogo-cor-da-bola`;
             backgroundBody.style.backgroundImage = "";
-            if(pontos >= 50){
+            if(pontos >= 60){
                 msgFinal2.style.display = "block";
             }else{
                 msgFinal1.style.display = "block";
