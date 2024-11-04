@@ -38,13 +38,17 @@ var ativarIntervalo = function() { //função 01
             backgroundBody.style.backgroundImage = "";
             if(pontos >= 60){
                 msgFinal2.style.display = "block";
+                msgFinal2.style.backgroundColor = `${hexaCor[random1]}`;
+                msgFinal2.style.color = `${fontColor[random1]}`;
             }else{
                 msgFinal1.style.display = "block";
+                msgFinal1.style.backgroundColor = `${hexaCor[random1]}`;
+                msgFinal1.style.color = `${fontColor[random1]}`;
             }
         }
         let timeout;
         function fimJogo(){
-            timeout = setTimeout(telaFinal, 3000);
+            timeout = setTimeout(telaFinal, 2500);
         }
         fimJogo();
     }
@@ -92,6 +96,11 @@ bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#0000
 bloco.innerText = `${nomeCor[random2]}`;
 bloco.style.color = `${fontColor[random1]}`;
 idPonto.innerHTML = `${pontos} pontos`;
+botao1.style.backgroundColor = `${hexaCor[random1]}`;
+botao2.style.backgroundColor = `${hexaCor[random1]}`;
+botao1.style.color = `${fontColor[random1]}`;
+botao2.style.color = `${fontColor[random1]}`;
+
 
 function certo(){ 
     if(temporizadorLigado == false && temporizadorDesligado == false){
@@ -139,6 +148,11 @@ function certo(){
         bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#000000)`;
         bloco.style.color = `${fontColor[random1]}`;
         bloco.innerText = `${nomeCor[random2]}`;
+        botao1.style.backgroundColor = `${hexaCor[random1]}`;
+        botao2.style.backgroundColor = `${hexaCor[random1]}`;
+        botao1.style.color = `${fontColor[random1]}`;
+        botao2.style.color = `${fontColor[random1]}`;
+
     }else if(random3 == 1){
         random1 = Math.floor(Math.random() * 6);
         backgroundBody.style.backgroundColor = `${contrastes[random1]}`;
@@ -146,6 +160,10 @@ function certo(){
         bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#000000)`;
         bloco.style.color = `${fontColor[random1]}`;
         bloco.innerText = `${nomeCor[random1]}`;
+        botao1.style.backgroundColor = `${hexaCor[random1]}`;
+        botao2.style.backgroundColor = `${hexaCor[random1]}`;
+        botao1.style.color = `${fontColor[random1]}`;
+        botao2.style.color = `${fontColor[random1]}`;
         random2 = random1;
     }
 
@@ -198,6 +216,11 @@ function errado(){
         bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#000000)`;
         bloco.style.color = `${fontColor[random1]}`;
         bloco.innerText = `${nomeCor[random2]}`;
+        botao1.style.backgroundColor = `${hexaCor[random1]}`;
+        botao2.style.backgroundColor = `${hexaCor[random1]}`;
+        botao1.style.color = `${fontColor[random1]}`;
+        botao2.style.color = `${fontColor[random1]}`;
+
     }else if(random3 == 1){
         random1 = Math.floor(Math.random() * 6);
         backgroundBody.style.backgroundColor = `${contrastes[random1]}`;
@@ -205,6 +228,10 @@ function errado(){
         bloco.style.backgroundImage = `radial-gradient(circle, ${hexaCor[random1]},#000000)`;
         bloco.style.color = `${fontColor[random1]}`;
         bloco.innerText = `${nomeCor[random1]}`;
+        botao1.style.backgroundColor = `${hexaCor[random1]}`;
+        botao2.style.backgroundColor = `${hexaCor[random1]}`;
+        botao1.style.color = `${fontColor[random1]}`;
+        botao2.style.color = `${fontColor[random1]}`;
         random2 = random1;
     }
 
