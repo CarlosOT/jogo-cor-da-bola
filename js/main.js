@@ -23,7 +23,7 @@ let ativarIntervalo = function() {
         mds.hideElement('bloco');
         mds.hideElement('pontos');
         mds.hideElement('idFooter');
-        backgroundBody.style.backgroundImage = "url(imagem/monstro.jpg)";
+        mds.setBgImg('background', 'url(imagem/monstro.jpg)');
         backgroundBody.style.backgroundRepeat = "no-repeat";
         backgroundBody.style.backgroundPosition = "center";
         backgroundBody.style.backgroundSize = "cover";
@@ -38,7 +38,7 @@ let ativarIntervalo = function() {
             mds.showElement('idFooter');
             mds.showElement('botao3');
             linkCompartilha.href = `https://api.whatsapp.com/send?&text=t%C3%A1%20todo%20mundo%20jogando,%20eu%20consegui%20fazer%20${pontos}%20pontos%20%F0%9F%98%86%0A%0Aquero%20ver%20voc%C3%AA%20agora%20%F0%9F%91%87%F0%9F%8F%BC%0A%0Ahttps://carlosot.github.io/jogo-cor-da-bola`;
-            backgroundBody.style.backgroundImage = "";
+            mds.setBgImg('background', '');
             if(pontos >= 60){
                 mds.showElement('msgFinal2');
                 msgFinal2.style.backgroundColor = `${hexaCor[random1]}`;
@@ -84,23 +84,18 @@ let temporizadorDesligado = false;
 
 mds.hideElement('temporizador');
 mds.hideElement('botao3');
-backgroundBody.style.backgroundColor = `${contrastes[random1]}`;
-
+mds.setBgColor('background', `${contrastes[random1]}`);
 mds.hideElement('msgFinal1');
 mds.hideElement('msgFinal2');
-
 mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
 mds.insertText('bloco', `${nomeCor[random2]}`);
 mds.setFontColor('bloco', `${fontColor[random1]}`);
-
 mds.hideElement('pontos');
 mds.insertHtml('pontos', `${pontos} pontos`);
-
-botao1.style.backgroundColor = `${hexaCor[random1]}`;
-botao1.style.color = `${fontColor[random1]}`;
-
-botao2.style.backgroundColor = `${hexaCor[random1]}`;
-botao2.style.color = `${fontColor[random1]}`;
+mds.setBgColor('botao1', `${hexaCor[random1]}`);
+mds.setBgColor('botao2', `${hexaCor[random1]}`);
+mds.setFontColor('botao1', `${fontColor[random1]}`);
+mds.setFontColor('botao2', `${fontColor[random1]}`);
 
 
 function certo(){ 
