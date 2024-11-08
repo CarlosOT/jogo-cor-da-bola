@@ -24,18 +24,18 @@ let temporizadorDesligado = false;
 
 mds.hideElement('temporizador');
 mds.hideElement('botao3');
-mds.setBgColor('background', `${contrastes[random1]}`);
+mds.setBgColor('background', `${contrastes.at(random1)}`);
 mds.hideElement('msgFinal1');
 mds.hideElement('msgFinal2');
-mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
-mds.insertText('bloco', `${nomeCor[random2]}`);
-mds.setFontColor('bloco', `${fontColor[random1]}`);
+mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor.at(random1)},#000000)`);
+mds.insertText('bloco', `${nomeCor.at(random2)}`);
+mds.setFontColor('bloco', `${fontColor.at(random1)}`);
 mds.hideElement('pontos');
 mds.insertHtml('pontos', `${pontos} pontos`);
-mds.setBgColor('botao1', `${hexaCor[random1]}`);
-mds.setBgColor('botao2', `${hexaCor[random1]}`);
-mds.setFontColor('botao1', `${fontColor[random1]}`);
-mds.setFontColor('botao2', `${fontColor[random1]}`);
+mds.setBgColor('botao1', `${hexaCor.at(random1)}`);
+mds.setBgColor('botao2', `${hexaCor.at(random1)}`);
+mds.setFontColor('botao1', `${fontColor.at(random1)}`);
+mds.setFontColor('botao2', `${fontColor.at(random1)}`);
 
 
 let ativarIntervalo = function() {
@@ -73,12 +73,12 @@ let ativarIntervalo = function() {
             mds.setBgImg('background', '');
             if(pontos >= 60){
                 mds.showElement('msgFinal2');
-                mds.setBgColor('msgFinal2', `${hexaCor[random1]}`);
-                mds.setFontColor('msgFinal2', `${fontColor[random1]}`);
+                mds.setBgColor('msgFinal2', `${hexaCor.at(random1)}`);
+                mds.setFontColor('msgFinal2', `${fontColor.at(random1)}`);
             }else{
                 mds.showElement('msgFinal1');
-                mds.setBgColor('msgFinal1', `${hexaCor[random1]}`);
-                mds.setFontColor('msgFinal1', `${fontColor[random1]}`);
+                mds.setBgColor('msgFinal1', `${hexaCor.at(random1)}`);
+                mds.setFontColor('msgFinal1', `${fontColor.at(random1)}`);
             }
         }
         let timeout;
@@ -131,25 +131,25 @@ function certo(){
     if(random3 == 0){
         random1 = Math.floor(Math.random() * 6);
         random2 = Math.floor(Math.random() * 6);
-        mds.setBgColor('background', `${contrastes[random1]}`);
-        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
-        mds.setFontColor('bloco', `${fontColor[random1]}`);
-        mds.insertText('bloco', `${nomeCor[random2]}`);
-        mds.setBgColor('botao1', `${hexaCor[random1]}`);
-        mds.setBgColor('botao2', `${hexaCor[random1]}`);
-        mds.setFontColor('botao1', `${fontColor[random1]}`);
-        mds.setFontColor('botao2', `${fontColor[random1]}`);
+        mds.setBgColor('background', `${contrastes.at(random1)}`);
+        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor.at(random1)},#000000)`);
+        mds.setFontColor('bloco', `${fontColor.at(random1)}`);
+        mds.insertText('bloco', `${nomeCor.at(random2)}`);
+        mds.setBgColor('botao1', `${hexaCor.at(random1)}`);
+        mds.setBgColor('botao2', `${hexaCor.at(random1)}`);
+        mds.setFontColor('botao1', `${fontColor.at(random1)}`);
+        mds.setFontColor('botao2', `${fontColor.at(random1)}`);
 
     }else if(random3 == 1){
         random1 = Math.floor(Math.random() * 6);
-        mds.setBgColor('background', `${contrastes[random1]}`);
-        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
-        mds.setFontColor('bloco', `${fontColor[random1]}`);
-        mds.insertText('bloco', `${nomeCor[random1]}`);
-        mds.setBgColor('botao1', `${hexaCor[random1]}`);
-        mds.setBgColor('botao2', `${hexaCor[random1]}`);
-        mds.setFontColor('botao1', `${fontColor[random1]}`);
-        mds.setFontColor('botao2', `${fontColor[random1]}`);
+        mds.setBgColor('background', `${contrastes.at(random1)}`);
+        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor.at(random1)},#000000)`);
+        mds.setFontColor('bloco', `${fontColor.at(random1)}`);
+        mds.insertText('bloco', `${nomeCor.at(random1)}`);
+        mds.setBgColor('botao1', `${hexaCor.at(random1)}`);
+        mds.setBgColor('botao2', `${hexaCor.at(random1)}`);
+        mds.setFontColor('botao1', `${fontColor.at(random1)}`);
+        mds.setFontColor('botao2', `${fontColor.at(random1)}`);
         random2 = random1;
     }
 
@@ -197,25 +197,25 @@ function errado(){
     if(random3 == 0){
         random1 = Math.floor(Math.random() * 6);
         random2 = Math.floor(Math.random() * 6);
-        mds.setBgColor('background', `${contrastes[random1]}`);
-        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
-        mds.setFontColor('bloco', `${fontColor[random1]}`);
-        mds.insertText('bloco', `${nomeCor[random2]}`);
-        mds.setBgColor('botao1', `${hexaCor[random1]}`);
-        mds.setBgColor('botao2', `${hexaCor[random1]}`);
-        mds.setFontColor('botao1', `${fontColor[random1]}`);
-        mds.setFontColor('botao2', `${fontColor[random1]}`);
+        mds.setBgColor('background', `${contrastes.at(random1)}`);
+        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor.at(random1)},#000000)`);
+        mds.setFontColor('bloco', `${fontColor.at(random1)}`);
+        mds.insertText('bloco', `${nomeCor.at(random2)}`);
+        mds.setBgColor('botao1', `${hexaCor.at(random1)}`);
+        mds.setBgColor('botao2', `${hexaCor.at(random1)}`);
+        mds.setFontColor('botao1', `${fontColor.at(random1)}`);
+        mds.setFontColor('botao2', `${fontColor.at(random1)}`);
 
     }else if(random3 == 1){
         random1 = Math.floor(Math.random() * 6);
-        mds.setBgColor('background', `${contrastes[random1]}`);
-        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor[random1]},#000000)`);
-        mds.setFontColor('bloco', `${fontColor[random1]}`);
-        mds.insertText('bloco', `${nomeCor[random1]}`);
-        mds.setBgColor('botao1', `${hexaCor[random1]}`);
-        mds.setBgColor('botao2', `${hexaCor[random1]}`);
-        mds.setFontColor('botao1', `${fontColor[random1]}`);
-        mds.setFontColor('botao2', `${fontColor[random1]}`);
+        mds.setBgColor('background', `${contrastes.at(random1)}`);
+        mds.setBgImg('bloco', `radial-gradient(circle, ${hexaCor.at(random1)},#000000)`);
+        mds.setFontColor('bloco', `${fontColor.at(random1)}`);
+        mds.insertText('bloco', `${nomeCor.at(random1)}`);
+        mds.setBgColor('botao1', `${hexaCor.at(random1)}`);
+        mds.setBgColor('botao2', `${hexaCor.at(random1)}`);
+        mds.setFontColor('botao1', `${fontColor.at(random1)}`);
+        mds.setFontColor('botao2', `${fontColor.at(random1)}`);
         random2 = random1;
     }
 
