@@ -222,5 +222,5 @@ function errado(){
     temporizadorDesligado = true;
 };
 
-botao1.addEventListener('click', certo);
-botao2.addEventListener('click', errado);
+document.getElementById('botao1').addEventListener('click', certo);
+document.getElementById('botao2').addEventListener('click', errado);
