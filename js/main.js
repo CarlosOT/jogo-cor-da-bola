@@ -6,7 +6,7 @@
 
 import * as mds from "../modules/md.js"
 
-let backgroundBody = document.getElementById('background');
+let backgroundBody = document.querySelector('body#background');
 let audioSusto = document.getElementById('audioSusto');
 let linkCompartilha = document.getElementById('linkCompartilha');
 
