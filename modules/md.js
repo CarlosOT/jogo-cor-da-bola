@@ -14,6 +14,7 @@ export function showElement(idElement){
     document.getElementById(idElement).style.display = "block";
 }
 
+//------------------------------------------------------------------------------INICIO BACKGROUND
 /**
  * getElementById(**idElement**).style.backgroundColor = **value**
  * @param {string} value 
@@ -31,6 +32,43 @@ export function setBgColor(idElement, value){
 export function setBgImg(idElement, value){
     document.getElementById(idElement).style.backgroundImage = value;
 }
+
+/**
+ * getElementById(**idElement**).style.backgroundRepeat = **value**
+ * @param {string} idElement 
+ * @param {string} value 
+ */
+export function setBgRepeat(idElement, value){
+    document.getElementById(idElement).style.backgroundRepeat = value;
+}
+
+/**
+ * getElementById(**idElement**).style.backgroundPosition = **value**
+ * @param {string} idElement 
+ * @param {string} value 
+ */
+export function setBgPosition(idElement, value){
+    document.getElementById(idElement).style.backgroundPosition = value;
+}
+
+/**
+ * getElementById(**idElement**).style.backgroundSize = **value**
+ * @param {string} idElement 
+ * @param {string} value 
+ */
+export function setBgSize(idElement, value){
+    document.getElementById(idElement).style.backgroundSize = value;
+}
+
+/**
+ * getElementById(**idElement**).style.backgroundAttachment = **value**
+ * @param {string} idElement 
+ * @param {string} value 
+ */
+export function setBgAttachment(idElement, value){
+    document.getElementById(idElement).style.backgroundAttachment = value;
+}
+//------------------------------------------------------------------------------FIM BACKGROUND
 
 /**
  * getElementById(**idElement**).style.color = **value**

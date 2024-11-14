@@ -1,12 +1,10 @@
-/* 
-[1] DESCOMENTAR O IFRAME NO INDEX.HTML
+/*
 [2] DESCOMENTAR ÁUDIO SUSTO
 [3] VOLTAR SEGUNDOS PARA 60
 */
 
 import * as mds from "../modules/md.js"
 
-let backgroundBody = document.querySelector('body#background');
 let audioSusto = document.getElementById('audioSusto');
 let linkCompartilha = document.getElementById('linkCompartilha');
 
@@ -56,10 +54,10 @@ let ativarIntervalo = function() {
         mds.hideElement('pontos');
         mds.hideElement('idFooter');
         mds.setBgImg('background', 'url(imagem/monstro.jpg)');
-        backgroundBody.style.backgroundRepeat = "no-repeat";
-        backgroundBody.style.backgroundPosition = "center";
-        backgroundBody.style.backgroundSize = "cover";
-        backgroundBody.style.backgroundAttachment = "fixed";
+        mds.setBgRepeat('background', 'no-repeat');
+        mds.setBgPosition('background', 'center');
+        mds.setBgSize('background', 'cover');
+        mds.setBgAttachment('background', 'fixed');
         //audioSusto.autoplay = true;
         //audioSusto.load();
 
