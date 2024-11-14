@@ -1,39 +1,42 @@
 @charset "UTF-8";
-/*-------------------------------------inicio seletores sem id ou class*/
 
+/*-------------------HEADER----------------------->*/
 header{
     text-align: center;
-
 }
+
+/*-------------------LINK----------------------->*/
 a{
     text-decoration: none;
     color: white;
     font-size: 17px;
 }
+
+/*-------------------H1----------------------->*/
 h1{
     font-size: 40px;
     color: white;
 }
+
+/*-------------------H2----------------------->*/
 h2{
     margin-top: -20px;
     font-size: 20px;
     color: white;
 }
+
+/*-------------------HR----------------------->*/
 hr{
     width: 50px;
 }
 
-/*-------------------------------------fim seletores sem id ou class*/
-
-/*---------------------------------inicio com seletores id ou class*/
-
+/*-------------------BODY----------------------->*/
 body#background{
     font: 15pt normal;
     text-align: center;
 }
 
-/**/
-
+/*-------------------SECTION----------------------->*/
 section#bloco{
     background-image: radial-gradient(circle, #ffff00,#000000);
     width: 200px;
@@ -45,7 +48,7 @@ section#bloco{
     font-weight: bold;
 }
 
-/**/
+/*-------------------P----------------------->*/
 p{
     color: #ffffff;
 }
@@ -102,7 +105,7 @@ p#msgFinal1, p#msgFinal2{
     border-radius: 50px;
 }
 
-/**/
+/*-------------------BUTTON----------------------->*/
 button{
     padding: 10px;
     border-radius: 5px;
@@ -125,7 +128,7 @@ button#botao3{
     margin: auto;
 }
 
-/**/
+/*-------------------FOOTER----------------------->*/
 footer#idFooter{
     text-align: center;
     margin-top: 10px;
