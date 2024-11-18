@@ -187,3 +187,21 @@ export function setFontSize(idElement, value){
     document.getElementById(idElement).style.fontSize = value;
 }
 
+/**
+ * getElementById(**idElement**).href = **url**
+ * @param {string} idElement 
+ * @param {string} url 
+ */
+export function setHref(idElement, url){
+    document.getElementById(idElement).href = url;
+}
+
+/**
+ * @param {string} idElement 
+ * @param {boolean} value 
+ */
+export function setAudio(idElement, value){
+    document.getElementById(idElement).autoplay = value;
+    document.getElementById(idElement).load();
+}
+
